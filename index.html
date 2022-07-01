@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>MOME</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <div class="survey-container">
+        <h2>Mennyire érzed jól magad a MOME hallgatójaként?</h2>
+
+        <form class="container" method="POST" action="/" id="survey">
+            <div class="negativeLimit">Egyáltalán nem érzem jól magam</div>
+            <div class="range-slider">
+                <div class="lower-level"></div>
+                <input type="range" class="slider" min="-100" max="100" value="0" name="enjoyment_level">
+                <div class="progress-minus"></div>
+                <div class="progress-plus"></div>
+            </div>
+            <div class="positiveLimit">Nagyon jól érzem magam</div>
+            <button class="clearButton" type="reset" id="clearButton" value="Clear" name="Clear">Clear</button>
+        </form>
+
+        <input form="survey" type="submit" value="Send" name="submitButton" id="submitButton">
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
